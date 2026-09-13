@@ -4,7 +4,7 @@ const fallbackData = {title:'انتخاب امروز',items:[{title:'یک گزی
 const $ = (selector, root=document) => root.querySelector(selector);
 const $$ = (selector, root=document) => [...root.querySelectorAll(selector)];
 const fa = value => new Intl.NumberFormat('fa-IR').format(value);
-const state = {manifest:null, datasets:{}, activeCategory:null, activeItems:[], currentIndex:0, spinning:false, mode:'wheel', quickTimer:null, activeSounds:new Map(), appearance:{theme:'neon',accent:'#d8f36b',secondary:'#72d8d2',radius:18}, settings:{effects:true,surprise:true,sounds:true,volume:35}, stats:{visits:0,choices:0,custom:0,byDay:{}}};
+const state = {manifest:null, catalog:[], datasets:{}, activeCategory:null, activeItems:[], activeCategoryId:null, lastSelections:{}, currentIndex:0, mode:'cards', quickTimer:null, activeSounds:new Map(), appearance:{theme:'neon',scheme:'dark',depth:'2d',accent:'#d8f36b',secondary:'#72d8d2',radius:18}, settings:{effects:true,surprise:true,sounds:true,volume:35}, stats:{visits:0,choices:0,custom:0,byDay:{}}};
 let audioContext = null;
 let masterGain = null;
 const colors = ['#d8f36b','#72d8d2','#8d7dff','#ffab73','#ff8fa3','#9fe3ff','#c8bfff','#ffce73'];
@@ -16,14 +16,16 @@ async function loadJSON(path, fallback){
 
 async function init(){
   state.manifest = await loadJSON('data.json', fallbackManifest);
+  state.catalog = await loadJSON(state.manifest.app?.catalog || 'data/catalog.json', []);
   const savedSettings = JSON.parse(localStorage.getItem(STORAGE.settings) || '{}');
   state.settings = {...state.settings, ...savedSettings};
   state.appearance = {...state.appearance, ...JSON.parse(localStorage.getItem(STORAGE.appearance) || '{}')};
+  state.lastSelections = JSON.parse(localStorage.getItem(STORAGE.last) || '{}');
   state.stats = {...state.stats, ...JSON.parse(localStorage.getItem(STORAGE.stats) || '{}')};
   state.stats.byDay = state.stats.byDay || {};
   const custom = JSON.parse(localStorage.getItem(STORAGE.custom) || 'null');
   if(custom?.items?.length){ state.manifest.categories.push({...custom, custom:true, icon:'＋', color:'#d8f36b', description:'بوم ذخیره‌شده‌ی تو'}); state.datasets[custom.id] = custom; }
-  renderCategories(); renderSounds(); bindEvents(); applyAppearance(); updateAdmin();
+  renderCategories(); renderSounds(); bindEvents(); applyAppearance(); if(window.matchMedia&&!state.systemMedia){state.systemMedia=window.matchMedia('(prefers-color-scheme:light)');state.systemMedia.addEventListener('change',()=>{if(state.appearance.scheme==='system')applyAppearance();});} updateAdmin();
   track('visit');
 }
 
@@ -52,12 +54,16 @@ function bindEvents(){
   $('#soundboard').addEventListener('dragover', event => event.preventDefault());
   $('#soundboard').addEventListener('drop', event => { event.preventDefault(); const id=event.dataTransfer.getData('text/plain'); const button=$(`#soundList [data-sound="${id}"]`); if(id && button) toggleSound(id,button,true); });
   $('#volumeControl').addEventListener('input', event => { state.settings.volume=Number(event.target.value); saveSettings(); setMasterVolume(); });
+  $('#cardCount').addEventListener('input', event => { $('#cardCountValue').textContent=fa(Number(event.target.value)); if(state.mode==='cards'&&!state.cardsLocked)renderMysteryCards(); });
+  $('#glowBox').addEventListener('click', () => openBox(false));
   $('#appearanceToggle').addEventListener('click', openAppearance); $('#closeAppearance').addEventListener('click', closeAppearance);
   $$('.theme-choice').forEach(button => button.addEventListener('click', () => { state.appearance.theme=button.dataset.theme; saveAppearance(); applyAppearance(); showToast(`تم ${button.querySelector('strong').textContent} فعال شد`); }));
+  $$('#schemeSwitcher button').forEach(button => button.addEventListener('click', () => { state.appearance.scheme=button.dataset.scheme; saveAppearance(); applyAppearance(); }));
+  $$('#depthSwitcher button').forEach(button => button.addEventListener('click', () => { state.appearance.depth=button.dataset.depth; saveAppearance(); applyAppearance(); }));
   $('#accentColor').addEventListener('input', event => { state.appearance.accent=event.target.value; saveAppearance(); applyAppearance(); });
   $('#secondaryColor').addEventListener('input', event => { state.appearance.secondary=event.target.value; saveAppearance(); applyAppearance(); });
   $('#radiusControl').addEventListener('input', event => { state.appearance.radius=Number(event.target.value); saveAppearance(); applyAppearance(); });
-  $('#resetAppearance').addEventListener('click', () => { state.appearance={theme:'neon',accent:'#d8f36b',secondary:'#72d8d2',radius:18}; saveAppearance(); applyAppearance(); showToast('ظاهر به حالت اولیه برگشت'); });
+  $('#resetAppearance').addEventListener('click', () => { state.appearance={theme:'neon',scheme:'dark',depth:'2d',accent:'#d8f36b',secondary:'#72d8d2',radius:18}; saveAppearance(); applyAppearance(); showToast('ظاهر به حالت اولیه برگشت'); });
   $('#adminToggle').addEventListener('click', openAdmin); $('#closeAdmin').addEventListener('click', closeAdmin); $('#drawerBackdrop').addEventListener('click', closeAdmin); $('#drawerBackdrop').addEventListener('click', closeAppearance);
   $$('[data-setting]').forEach(input => { input.checked = state.settings[input.dataset.setting] !== false; input.addEventListener('change', () => { state.settings[input.dataset.setting] = input.checked; saveSettings(); }); });
   $('#clearLocalData').addEventListener('click', clearLocalData);
@@ -65,49 +71,40 @@ function bindEvents(){
 
 async function openCategory(id){
   const category = state.manifest.categories.find(item => item.id === id); if(!category) return;
-  if(!state.datasets[id]) state.datasets[id] = await loadJSON(category.file, {...fallbackData,title:category.title});
+  if(!state.datasets[id]) state.datasets[id] = category.file ? await loadJSON(category.file, {...fallbackData,title:category.title}) : (state.catalog[category.index] || {...fallbackData,title:category.title});
   state.activeCategory = category; state.activeItems = state.datasets[id].items || fallbackData.items; state.currentIndex = 0;
+  state.activeCategoryId = id;
   $('#decisionEyebrow').textContent = category.title; $('#decisionTitle').textContent = category.custom ? 'بوم خودت' : 'آماده‌ای؟'; $('#decisionPanel').hidden = false; $('#decisionPanel').scrollIntoView({behavior:'smooth',block:'center'});
-  $('#resultTitle').textContent = 'یک گزینه را انتخاب کن'; $('#resultDescription').textContent = 'می‌توانی گردونه را بچرخانی یا از بین کارت‌های پایین، شانس خودت را امتحان کنی.'; $('#resultKicker').textContent = 'تصمیمت را بسپار به لحظه'; $('#wheelCenter').textContent = 'شروع';
-  renderWheel(); renderOptionCards(); setMode(state.mode);
+  $('#resultTitle').textContent = 'یک گزینه را انتخاب کن'; $('#resultDescription').textContent = 'تعداد کارت‌ها را انتخاب کن و یکی را لمس کن؛ بعد از انتخاب، همان دور قفل می‌شود.'; $('#resultKicker').textContent = 'سه کارت ناشناس';
+  renderOptionCards(); setMode(state.mode); const previous=state.lastSelections[id]; if(previous){$('#resultKicker').textContent='آخرین انتخاب تو';$('#resultTitle').textContent=previous.title;$('#resultDescription').textContent=previous.description||'این انتخاب از دفعه‌ی قبل حفظ شده است.';}
 }
 
 function closeDecision(){ $('#decisionPanel').hidden = true; state.activeCategory = null; }
 
 function renderOptionCards(){
-  $('#optionCards').innerHTML = state.activeItems.map((item,index) => `<button class="option-card" data-option-index="${index}">${item.title}</button>`).join('');
-  $$('#optionCards .option-card').forEach(card => card.addEventListener('click', () => choose(Number(card.dataset.optionIndex))));
+  $('#optionCards').innerHTML = `<div class="list-heading"><span>لیست گزینه‌ها</span><small>برای خط‌زدن لمس کن</small></div>${state.activeItems.map((item,index) => `<button class="option-card" data-option-index="${index}" type="button"><span class="option-check">✓</span><span>${item.title}</span></button>`).join('')}`;
+  $$('#optionCards .option-card').forEach(card => card.addEventListener('click', () => markListOption(Number(card.dataset.optionIndex),card)));
 }
-
-function renderWheel(rotation=0){
-  const canvas = $('#decisionCanvas'); const ctx = canvas.getContext('2d'); const cx = canvas.width/2, cy = canvas.height/2, radius = 220; const items = state.activeItems; const slice = Math.PI*2/items.length;
-  ctx.clearRect(0,0,canvas.width,canvas.height); ctx.save(); ctx.translate(cx,cy); ctx.rotate(rotation);
-  items.forEach((item,index) => { const start = index*slice-Math.PI/2; const end = start+slice; ctx.beginPath(); ctx.moveTo(0,0); ctx.arc(0,0,radius,start,end); ctx.closePath(); ctx.fillStyle = colors[index%colors.length]; ctx.globalAlpha = .95; ctx.fill(); ctx.strokeStyle = 'rgba(9,11,21,.45)'; ctx.lineWidth=3; ctx.stroke(); ctx.save(); ctx.rotate(start+slice/2); ctx.translate(radius*.68,0); ctx.rotate(Math.PI/2); ctx.fillStyle='#101426'; ctx.font='700 17px Vazirmatn'; ctx.textAlign='center'; ctx.textBaseline='middle'; const label = item.title.length > 17 ? `${item.title.slice(0,16)}…` : item.title; ctx.fillText(label,0,0); ctx.restore(); });
-  ctx.restore(); ctx.beginPath(); ctx.arc(cx,cy,38,0,Math.PI*2); ctx.fillStyle='#101426'; ctx.fill(); ctx.strokeStyle='rgba(255,255,255,.2)'; ctx.lineWidth=2; ctx.stroke();
-}
-
-function spin(){
-  if(state.spinning || !state.activeItems.length) return; state.spinning = true; const canvas = $('#decisionCanvas'); const index = Math.floor(Math.random()*state.activeItems.length); const slice = 360/state.activeItems.length; const target = 360*5 + (360 - index*slice - slice/2); const duration = 1750; const start = performance.now(); const base = Number(canvas.dataset.rotation || 0); const final = base + target * Math.PI/180;
-  playTone(250,'triangle',.12); $('#spinButton').disabled = true; $('#wheelCenter').textContent='...';
-  const tick = now => { const progress=Math.min(1,(now-start)/duration); const eased=1-Math.pow(1-progress,3); const rotation=base+(final-base)*eased; canvas.dataset.rotation=rotation; renderWheel(rotation); if(progress<1) requestAnimationFrame(tick); else { state.spinning=false; $('#spinButton').disabled=false; choose(index); } }; requestAnimationFrame(tick);
-}
+function markListOption(index,card){if(state.mode==='cards'&&state.cardsLocked)return showToast('این دور قفل شده؛ برای انتخاب دوباره «کارت‌های تازه» را بزن');card.classList.toggle('done');if(card.classList.contains('done'))choose(index);}
 
 function setMode(mode){
-  state.mode=mode; $$('.mode-button').forEach(button=>button.classList.toggle('active',button.dataset.mode===mode));
-  const wheel=mode==='wheel', auto=mode==='auto', cards=mode==='cards', quick=mode==='quick';
-  $('#decisionCanvas').hidden=!wheel; $('.wheel-pointer').hidden=!wheel; $('#wheelCenter').hidden=!wheel; $('#autoStage').hidden=!auto; $('#mysteryStage').hidden=!cards; $('#quickStage').hidden=!quick; $('#optionCards').hidden=cards;
-  const copy={wheel:['تصمیمت را بسپار به لحظه','می‌توانی گردونه را بچرخانی یا از بین کارت‌های پایین، شانس خودت را امتحان کنی.','بچرخان ↻'],auto:['پیدا کن','بگذار انتخاب خودکار از بین گزینه‌ها یک پیشنهاد مناسب برایت پیدا کند.','پیدا کن ✦'],cards:['کارت را کشف کن','سه کارت ناشناس داری؛ یکی را انتخاب کن و ببین چه چیزی پشت آن پنهان شده.','کارت‌ها را بچین ▣'],quick:['قرعه‌ی سریع','یک انتخاب سریع و بی‌فکر برای وقتی که نمی‌خواهی زیاد تحلیل کنی.','قرعه بینداز ↯']}[mode];
+  state.mode=mode; state.cardsLocked=false; $$('.mode-button').forEach(button=>button.classList.toggle('active',button.dataset.mode===mode));
+  const cards=mode==='cards', scratch=mode==='scratch', box=mode==='box';
+  $('#mysteryStage').hidden=!cards; $('#scratchStage').hidden=!scratch; $('#boxStage').hidden=!box; $('#optionCards').hidden=false;
+  const copy={cards:['سه کارت ناشناس','تعداد کارت‌ها را انتخاب کن و یکی را لمس کن؛ بعد از انتخاب، همان دور قفل می‌شود.','کارت‌های تازه ↻'],scratch:['بخت‌آزمایی دستی','خانه‌ها را با انگشت یا ماوس خراش بده تا گزینه‌ها یکی‌یکی نمایان شوند.','شروع صفحه‌ی تازه ⌁'],box:['جعبه‌ی نورانی','چهار ضربه بزن، جعبه باز می‌شود و یک انتخاب از داخلش بیرون می‌آید.','باز کردن جعبه □']}[mode];
   $('#resultKicker').textContent=copy[0]; $('#resultDescription').textContent=copy[1]; $('#spinButton').innerHTML=copy[2];
-  if(cards) renderMysteryCards();
+  if(cards) renderMysteryCards(); if(scratch) renderScratchGrid(); if(box) resetBox();
 }
-function runMode(){ if(state.mode==='wheel') return spin(); if(state.mode==='auto') return autoPick(); if(state.mode==='cards') return renderMysteryCards(); return quickPick(); }
+function runMode(){ if(state.mode==='cards') return renderMysteryCards(); if(state.mode==='scratch') return renderScratchGrid(); return openBox(true); }
 function distinctIndexes(count){ const indexes=[]; while(indexes.length<Math.min(count,state.activeItems.length)){const index=Math.floor(Math.random()*state.activeItems.length);if(!indexes.includes(index))indexes.push(index);}return indexes; }
-function renderMysteryCards(){ const holder=$('#mysteryCards'); const indexes=distinctIndexes(3); holder.innerHTML=indexes.map(index=>`<button class="mystery-card" data-mystery-index="${index}" type="button" aria-label="کارت ناشناس"></button>`).join(''); $$('#mysteryCards .mystery-card').forEach(card=>card.addEventListener('click',()=>{card.classList.add('revealed');choose(Number(card.dataset.mysteryIndex));})); }
-function autoPick(){ if(state.spinning||!state.activeItems.length)return; state.spinning=true;$('#spinButton').disabled=true;$('#autoStage strong').textContent='در حال پیدا کردن...';let ticks=0;const timer=setInterval(()=>{const item=state.activeItems[Math.floor(Math.random()*state.activeItems.length)];$('#autoStage strong').textContent=item.title;ticks++;if(ticks>=8){clearInterval(timer);state.spinning=false;$('#spinButton').disabled=false;choose(state.activeItems.indexOf(item));}},110); }
-function quickPick(){ if(state.spinning||!state.activeItems.length)return;state.spinning=true;$('#spinButton').disabled=true;const symbols=['?','✦','↯','…'];let ticks=0;const timer=setInterval(()=>{$('#quickSymbol').textContent=symbols[ticks%symbols.length];ticks++;if(ticks>=10){clearInterval(timer);const index=Math.floor(Math.random()*state.activeItems.length);$('#quickSymbol').textContent='✓';state.spinning=false;$('#spinButton').disabled=false;choose(index);}},85); }
+function renderMysteryCards(){ const holder=$('#mysteryCards'); state.cardsLocked=false; const count=Number($('#cardCount').value||3); $('#cardCountValue').textContent=fa(count); $('#cardCount').disabled=false; const indexes=distinctIndexes(count); holder.innerHTML=indexes.map(index=>`<button class="mystery-card" data-mystery-index="${index}" type="button" aria-label="کارت ناشناس"><span>✦</span></button>`).join(''); $$('#mysteryCards .mystery-card').forEach(card=>card.addEventListener('click',()=>{if(state.cardsLocked)return;state.cardsLocked=true;$$('#mysteryCards .mystery-card').forEach(other=>{other.disabled=true;other.classList.toggle('revealed',other===card);});$('#cardCount').disabled=true;choose(Number(card.dataset.mysteryIndex));})); }
+function renderScratchGrid(){ const holder=$('#scratchGrid'); state.scratchLocked=false; const indexes=distinctIndexes(9); holder.innerHTML=indexes.map(index=>`<button class="scratch-tile" data-scratch-index="${index}" type="button"><span class="scratch-cover">پاک کن</span><strong>${state.activeItems[index]?.title || '...'}</strong></button>`).join(''); $$('#scratchGrid .scratch-tile').forEach(tile=>{tile.addEventListener('pointerdown',()=>{state.scratching=true;revealScratch(tile);});tile.addEventListener('pointerenter',()=>{if(state.scratching)revealScratch(tile);});tile.addEventListener('click',()=>revealScratch(tile));}); document.onpointerup=()=>{state.scratching=false;}; }
+function revealScratch(tile){if(state.scratchLocked||tile.classList.contains('scratched'))return;tile.classList.add('scratched');state.scratchLocked=true;$$('#scratchGrid .scratch-tile').forEach(other=>{if(other!==tile)other.disabled=true;});choose(Number(tile.dataset.scratchIndex));}
+function resetBox(){state.boxClicks=0;state.boxLocked=false;$('#glowBox').style.setProperty('--box-progress','0%');$('#glowBox').style.setProperty('--box-opacity','0');$('#glowBox').classList.remove('opened');$('#boxClicks').textContent='۴ کلیک تا باز شدن';}
+function openBox(fromButton=false){if(state.boxLocked)return;if(state.boxClicks===undefined||fromButton&&state.mode!=='box')resetBox();state.boxClicks++;$('#glowBox').style.setProperty('--box-progress',`${state.boxClicks*25}%`);$('#glowBox').style.setProperty('--box-opacity',`${state.boxClicks/4}`);$('#boxClicks').textContent=state.boxClicks>=4?'باز شد!':`${fa(4-state.boxClicks)} کلیک تا باز شدن`;if(state.boxClicks>=4){state.boxLocked=true;$('#glowBox').classList.add('opened');playTone(620,'sine',.35);choose(Math.floor(Math.random()*state.activeItems.length));}}
 
 function choose(index){
-  if(!state.activeItems[index]) return; state.currentIndex=index; const item=state.activeItems[index]; $('#resultKicker').textContent='پیشنهاد امروز'; $('#resultTitle').textContent=item.title; $('#resultDescription').textContent=item.description || 'این انتخاب را امتحان کن و ببین امروز به کجا می‌رسد.'; $('#wheelCenter').textContent='دوباره'; $$('#optionCards .option-card').forEach((card,i)=>card.classList.toggle('selected',i===index)); track('choice'); $('#resultCount').textContent=`${fa(state.stats.choices)} انتخاب امروز`; playTone(520,'sine',.14); if(state.settings.effects) confetti(); }
+  if(!state.activeItems[index]) return; state.currentIndex=index; const item=state.activeItems[index]; $('#resultKicker').textContent='پیشنهاد امروز'; $('#resultTitle').textContent=item.title; $('#resultDescription').textContent=item.description || 'این انتخاب را امتحان کن و ببین امروز به کجا می‌رسد.'; $$('#optionCards .option-card').forEach((card,i)=>{card.classList.toggle('selected',i===index);card.classList.toggle('done',i===index);}); state.lastSelections[state.activeCategoryId]={index,title:item.title,description:item.description}; localStorage.setItem(STORAGE.last,JSON.stringify(state.lastSelections)); track('choice'); $('#resultCount').textContent=`${fa(state.stats.choices)} انتخاب امروز`; playTone(520,'sine',.14); if(state.settings.effects) confetti(); }
 
 async function surprise(){
   if(state.settings.surprise===false) return showToast('پیشنهاد غافلگیرکننده خاموش است'); const categories = state.manifest.categories.filter(item=>!item.custom); const chosen=categories[Math.floor(Math.random()*categories.length)]; await openCategory(chosen.id); setTimeout(spin,350);
@@ -119,7 +116,7 @@ function saveCustom(event){
 
 function saveSettings(){ localStorage.setItem(STORAGE.settings,JSON.stringify(state.settings)); }
 function saveAppearance(){ localStorage.setItem(STORAGE.appearance,JSON.stringify(state.appearance)); }
-function applyAppearance(){ document.body.classList.remove('theme-neon','theme-matte','theme-colorful','theme-glass','theme-aurora'); document.body.classList.add(`theme-${state.appearance.theme}`); document.body.style.setProperty('--lime',state.appearance.accent); document.body.style.setProperty('--cyan',state.appearance.secondary); document.body.style.setProperty('--user-radius',`${state.appearance.radius}px`); $('#accentColor').value=state.appearance.accent; $('#secondaryColor').value=state.appearance.secondary; $('#radiusControl').value=state.appearance.radius; $('#radiusValue').textContent=fa(state.appearance.radius); $$('.theme-choice').forEach(button=>button.classList.toggle('active',button.dataset.theme===state.appearance.theme)); $('#volumeControl').value=state.settings.volume??35; setMasterVolume(); }
+function applyAppearance(){ const scheme=state.appearance.scheme==='system'?(window.matchMedia&&window.matchMedia('(prefers-color-scheme:light)').matches?'light':'dark'):state.appearance.scheme; document.body.classList.remove('theme-neon','theme-matte','theme-colorful','theme-glass','theme-aurora','scheme-light','scheme-dark','depth-2d','depth-3d'); document.body.classList.add(`theme-${state.appearance.theme}`,`scheme-${scheme}`,`depth-${state.appearance.depth||'2d'}`); document.body.style.setProperty('--lime',state.appearance.accent); document.body.style.setProperty('--cyan',state.appearance.secondary); document.body.style.setProperty('--user-radius',`${state.appearance.radius}px`); $('#accentColor').value=state.appearance.accent; $('#secondaryColor').value=state.appearance.secondary; $('#radiusControl').value=state.appearance.radius; $('#radiusValue').textContent=fa(state.appearance.radius); $$('.theme-choice').forEach(button=>button.classList.toggle('active',button.dataset.theme===state.appearance.theme)); $$('#schemeSwitcher button').forEach(button=>button.classList.toggle('active',button.dataset.scheme===state.appearance.scheme)); $$('#depthSwitcher button').forEach(button=>button.classList.toggle('active',button.dataset.depth===state.appearance.depth)); $('#volumeControl').value=state.settings.volume??35; setMasterVolume(); }
 function openAppearance(){ $('#appearanceDrawer').classList.add('open'); $('#drawerBackdrop').classList.add('open'); $('#appearanceDrawer').setAttribute('aria-hidden','false'); }
 function closeAppearance(){ $('#appearanceDrawer').classList.remove('open'); if(!$('#adminDrawer').classList.contains('open'))$('#drawerBackdrop').classList.remove('open'); $('#appearanceDrawer').setAttribute('aria-hidden','true'); }
 function track(type){ const today=new Date().toISOString().slice(0,10); state.stats.visits=state.stats.visits||0; state.stats.choices=state.stats.choices||0; state.stats.custom=state.stats.custom||0; if(type==='visit') state.stats.visits++; if(type==='choice') {state.stats.choices++; state.stats.byDay[today]=(state.stats.byDay[today]||0)+1;} if(type==='custom') state.stats.custom++; localStorage.setItem(STORAGE.stats,JSON.stringify(state.stats)); updateAdmin(); }
