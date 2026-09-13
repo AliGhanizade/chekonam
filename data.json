@@ -119,50 +119,5 @@
       "color": "#84d4cf",
       "index": 13
     }
-  ],
-  "sounds": [
-    {
-      "id": "rain",
-      "title": "باران ریز",
-      "subtitle": "soft rain · low pass",
-      "color": "#72d8d2",
-      "type": "rain",
-      "filter": 1050,
-      "volume": 0.12,
-      "frequency": 180,
-      "wave": "sine"
-    },
-    {
-      "id": "cafe",
-      "title": "کافه‌ی دور",
-      "subtitle": "warm room tone",
-      "color": "#ffab73",
-      "type": "cafe",
-      "filter": 1250,
-      "volume": 0.055,
-      "frequency": 196,
-      "wave": "triangle"
-    },
-    {
-      "id": "space",
-      "title": "مدار آرام",
-      "subtitle": "deep space pad",
-      "color": "#8d7dff",
-      "type": "space",
-      "volume": 0.08,
-      "frequency": 110,
-      "wave": "sine"
-    },
-    {
-      "id": "forest",
-      "title": "جنگل بعد باران",
-      "subtitle": "soft wind",
-      "color": "#d8f36b",
-      "type": "forest",
-      "filter": 620,
-      "volume": 0.08,
-      "frequency": 92,
-      "wave": "triangle"
-    }
   ]
 }
