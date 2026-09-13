@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alighanizade.github.io/chekonam/sitemap.xml
