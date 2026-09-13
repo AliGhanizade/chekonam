@@ -1,0 +1,2872 @@
+[
+  {
+    "title": "What should I cook?",
+    "items": [
+      {
+        "title": "01 — Herb stew",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "02 — Eggplant stew",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "03 — Barberry rice with chicken",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "04 — Lentil rice",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "05 — Green bean rice",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "06 — Tahchin",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "07 — Dizi",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "08 — Meat cutlets",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "09 — Herb frittata",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "10 — Kashk-e bademjan",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "11 — Cafe-style omelet",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "12 — Tomato rice",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "13 — Warm lentil soup",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "14 — Baked pasta",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "15 — Chicken salad",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "16 — Mirza ghasemi",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "17 — Kaleh jush",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "18 — Tabrizi meatballs",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "19 — Celery stew",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "20 — Fesenjan",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "21 — Chicken kebab",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "22 — Adas polo with dates",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "23 — Tuna pasta",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "24 — Vegetable soup",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "25 — Stuffed bell peppers",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "26 — Mushroom risotto",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "27 — Garlic butter shrimp",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "28 — Chicken fajitas",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "29 — Beef tacos",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "30 — Pesto pasta",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "31 — Vegetable curry",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "32 — Shakshuka",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "33 — Crispy potatoes and eggs",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "34 — Grilled chicken sandwich",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "35 — Falafel wrap",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "36 — Greek salad bowl",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "37 — Teriyaki noodles",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "38 — Baked salmon",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "39 — Bean chili",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "40 — Homemade pizza",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "41 — Chicken schnitzel",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "42 — Stuffed omelet",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "43 — Corn soup",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "44 — Couscous bowl",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "45 — Ratatouille",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "46 — Rice and beans",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "47 — Vegetable lasagna",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "48 — Tuna melt",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "49 — Yogurt cucumber soup",
+        "description": "A simple what should i cook? idea to try today."
+      },
+      {
+        "title": "50 — Breakfast pancakes",
+        "description": "A simple what should i cook? idea to try today."
+      }
+    ]
+  },
+  {
+    "title": "Where should we go on a date?",
+    "items": [
+      {
+        "title": "01 — Sunset walk",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "02 — Cozy cafe",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "03 — Bookstore date",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "04 — Street-food tour",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "05 — Art gallery",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "06 — Rooftop tea",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "07 — Board-game cafe",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "08 — Picnic in the park",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "09 — Pottery workshop",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "10 — Cinema night",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "11 — Photo walk",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "12 — Pastry tasting",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "13 — Museum afternoon",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "14 — Bike ride",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "15 — Live music",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "16 — Plant shop visit",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "17 — Beach walk",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "18 — Mini golf",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "19 — Cooking class",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "20 — Ice-cream hunt",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "21 — Poetry reading",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "22 — Thrift-store challenge",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "23 — Night market",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "24 — Breakfast date",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "25 — Sketching outdoors",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "26 — Escape room",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "27 — Aquarium visit",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "28 — Karaoke room",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "29 — Stargazing",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "30 — Local theater",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "31 — Coffee tasting",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "32 — Sunrise drive",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "33 — Botanical garden",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "34 — Record-store browse",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "35 — Craft market",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "36 — Food-truck stop",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "37 — Architecture walk",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "38 — Tea house",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "39 — Bowling date",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "40 — Flea market",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "41 — Dessert crawl",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "42 — Lake-side bench",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "43 — Dance workshop",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "44 — Gallery opening",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "45 — Kite flying",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "46 — Retro arcade",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "47 — Photo booth",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "48 — Quiet park reading",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "49 — Mini road trip",
+        "description": "A simple where should we go on a date? idea to try today."
+      },
+      {
+        "title": "50 — Make-your-own picnic",
+        "description": "A simple where should we go on a date? idea to try today."
+      }
+    ]
+  },
+  {
+    "title": "What should we do together?",
+    "items": [
+      {
+        "title": "01 — Cook something new",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "02 — Play charades",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "03 — Make a shared playlist",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "04 — Take a long walk",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "05 — Host a quiz",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "06 — Build a blanket fort",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "07 — Try a new cafe",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "08 — Watch a documentary",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "09 — Make a photo challenge",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "10 — Have a themed dinner",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "11 — Do a puzzle",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "12 — Plan a day trip",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "13 — Paint together",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "14 — Swap favorite stories",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "15 — Try karaoke",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "16 — Make mocktails",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "17 — Visit a local market",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "18 — Play cards",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "19 — Create a group bucket list",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "20 — Have a no-phone hour",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "21 — Bake cookies",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "22 — Do a room makeover",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "23 — Watch old clips",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "24 — Learn a dance",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "25 — Have a tasting night",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "26 — Make a short film",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "27 — Try a craft kit",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "28 — Go on a photo walk",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "29 — Write funny awards",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "30 — Plan a surprise",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "31 — Build a Lego scene",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "32 — Play two truths and a lie",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "33 — Make a time capsule",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "34 — Have a picnic",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "35 — Explore a new neighborhood",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "36 — Do a mini talent show",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "37 — Start a book club",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "38 — Try blind tasting",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "39 — Make friendship bracelets",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "40 — Have a themed movie night",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "41 — Create a quiz about the group",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "42 — Play a drawing telephone",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "43 — Make a snack board",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "44 — Visit a gallery",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "45 — Try a new sport",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "46 — Write future letters",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "47 — Do a sunset hangout",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "48 — Share travel dreams",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "49 — Make a group playlist",
+        "description": "A simple what should we do together? idea to try today."
+      },
+      {
+        "title": "50 — Choose tomorrow’s adventure",
+        "description": "A simple what should we do together? idea to try today."
+      }
+    ]
+  },
+  {
+    "title": "Simple seated group games",
+    "items": [
+      {
+        "title": "01 — Two truths and a lie",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "02 — Charades",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "03 — Categories",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "04 — Would you rather",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "05 — 20 questions",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "06 — Name five",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "07 — Word chain",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "08 — Story one word at a time",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "09 — Guess the song",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "10 — Mafia",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "11 — Pictionary",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "12 — Never have I ever",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "13 — Trivia relay",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "14 — Who am I?",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "15 — Alphabet game",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "16 — Movie quotes",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "17 — Doodle guess",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "18 — Memory circle",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "19 — Forbidden word",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "20 — Rapid questions",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "21 — Emoji movie quiz",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "22 — Finish the sentence",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "23 — Odd one out",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "24 — Fortunately unfortunately",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "25 — Password",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "26 — Heads up",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "27 — Count to twenty",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "28 — Rock paper scissors tournament",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "29 — Celebrity guessing",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "30 — Story dice",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "31 — The voting game",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "32 — A-Z list race",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "33 — Guess the object",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "34 — One-word debate",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "35 — Sound effect guess",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "36 — Post-it on the forehead",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "37 — Compliment circle",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "38 — Improv scene",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "39 — Mini scavenger hunt",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "40 — Name that tune",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "41 — Drawing relay",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "42 — Secret mission",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "43 — Question roulette",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "44 — Guess the childhood photo",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "45 — Build a story",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "46 — Five-second rule",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "47 — Fact or fiction",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "48 — Silent lineup",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "49 — Clue hunt",
+        "description": "A simple simple seated group games idea to try today."
+      },
+      {
+        "title": "50 — Group bingo",
+        "description": "A simple simple seated group games idea to try today."
+      }
+    ]
+  },
+  {
+    "title": "What should we watch?",
+    "items": [
+      {
+        "title": "01 — A comfort comedy",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "02 — A short documentary",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "03 — A mystery series",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "04 — An animated classic",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "05 — A nature film",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "06 — A cozy romance",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "07 — A one-season show",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "08 — A live concert film",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "09 — A smart thriller",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "10 — A food documentary",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "11 — A coming-of-age film",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "12 — A travel series",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "13 — A classic black-and-white movie",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "14 — A science explainer",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "15 — A courtroom drama",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "16 — A feel-good animation",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "17 — A foreign-language gem",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "18 — A sports documentary",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "19 — A heist movie",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "20 — A quiet indie film",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "21 — A historical mini-series",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "22 — A behind-the-scenes special",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "23 — A musical",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "24 — A stand-up special",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "25 — A detective episode",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "26 — A family adventure",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "27 — A time-travel story",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "28 — A space documentary",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "29 — A biographical film",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "30 — A dark comedy",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "31 — A cooking competition",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "32 — A short film collection",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "33 — A road movie",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "34 — A survival series",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "35 — A period drama",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "36 — A fantasy adventure",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "37 — A courtroom documentary",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "38 — A music biography",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "39 — A psychological mystery",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "40 — A feel-good series",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "41 — A stop-motion film",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "42 — A travel vlog",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "43 — A classic action movie",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "44 — A social experiment",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "45 — A sports comedy",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "46 — A nature mini-series",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "47 — A film by a new director",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "48 — A nostalgic favorite",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "49 — A random award winner",
+        "description": "A simple what should we watch? idea to try today."
+      },
+      {
+        "title": "50 — A 30-minute episode",
+        "description": "A simple what should we watch? idea to try today."
+      }
+    ]
+  },
+  {
+    "title": "Where should we go this weekend?",
+    "items": [
+      {
+        "title": "01 — Nearby village",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "02 — Forest picnic",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "03 — Lake day",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "04 — Mountain viewpoint",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "05 — Desert sunset",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "06 — Historic town",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "07 — Waterfall trail",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "08 — Riverside lunch",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "09 — Coastal drive",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "10 — Orchard visit",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "11 — Cave tour",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "12 — Canyon walk",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "13 — Camp under the stars",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "14 — Small-town breakfast",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "15 — Bike trail",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "16 — Local hot spring",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "17 — National park",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "18 — Hilltop picnic",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "19 — Sunrise hike",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "20 — Craft village",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "21 — Tea garden",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "22 — Countryside photography",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "23 — Train day trip",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "24 — Farm visit",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "25 — Birdwatching spot",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "26 — River camping",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "27 — Old castle",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "28 — Cedar grove",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "29 — Cultural festival",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "30 — Roadside cafe route",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "31 — Nature reserve",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "32 — Rocky beach",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "33 — Artisan market",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "34 — Wildflower meadow",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "35 — Off-road viewpoint",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "36 — Picnic by a dam",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "37 — Historic house tour",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "38 — Sunset rooftop",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "39 — Island day trip",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "40 — Local food road trip",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "41 — Garden museum",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "42 — Short cycling route",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "43 — Quiet monastery",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "44 — Woodland cabin",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "45 — Fishing pier",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "46 — Hill village",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "47 — Canyon picnic",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "48 — Open-air concert",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "49 — Stargazing field",
+        "description": "A simple where should we go this weekend? idea to try today."
+      },
+      {
+        "title": "50 — Choose a random map pin",
+        "description": "A simple where should we go this weekend? idea to try today."
+      }
+    ]
+  },
+  {
+    "title": "What can I do alone?",
+    "items": [
+      {
+        "title": "01 — Read one chapter",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "02 — Take a slow walk",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "03 — Make a new playlist",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "04 — Cook a comfort meal",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "05 — Organize one drawer",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "06 — Try a sketch",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "07 — Watch a short film",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "08 — Learn five phrases",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "09 — Take yourself to coffee",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "10 — Start a tiny project",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "11 — Stretch for ten minutes",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "12 — Write a page",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "13 — Visit a bookstore",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "14 — Try a new recipe",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "15 — Make a photo series",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "16 — Do a digital cleanup",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "17 — Practice a skill",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "18 — Build a mood board",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "19 — Take a different route",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "20 — Make a snack board",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "21 — Listen to a full album",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "22 — Plan a dream trip",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "23 — Try origami",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "24 — Do a puzzle",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "25 — Make a morning ritual",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "26 — Write a future note",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "27 — Learn a dance step",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "28 — Visit a museum",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "29 — Take a sunset photo",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "30 — Plant something",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "31 — Try a guided meditation",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "32 — Make a one-hour challenge",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "33 — Bake something simple",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "34 — Call someone you miss",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "35 — Explore a local street",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "36 — Create a personal quiz",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "37 — Repair one small thing",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "38 — Draw your room",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "39 — Try a new tea",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "40 — Make a mini budget",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "41 — Watch a language video",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "42 — Have a phone-free hour",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "43 — Write three ideas",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "44 — Do a home spa",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "45 — Make a collage",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "46 — Learn a card trick",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "47 — Take a long shower",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "48 — Create a reading list",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "49 — Try a new workout",
+        "description": "A simple what can i do alone? idea to try today."
+      },
+      {
+        "title": "50 — Sleep early",
+        "description": "A simple what can i do alone? idea to try today."
+      }
+    ]
+  },
+  {
+    "title": "What should I buy as a gift?",
+    "items": [
+      {
+        "title": "01 — Handwritten letter",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "02 — Curated snack box",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "03 — Small plant",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "04 — Personalized mug",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "05 — Pocket notebook",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "06 — Cozy socks",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "07 — Photo print",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "08 — Special tea",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "09 — Scented candle",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "10 — Desk organizer",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "11 — Book with a note",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "12 — Handmade soap",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "13 — Mini speaker",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "14 — Reusable bottle",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "15 — Puzzle set",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "16 — Coffee beans",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "17 — Art print",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "18 — Warm scarf",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "19 — Baking kit",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "20 — Travel pouch",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "21 — Board game",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "22 — Custom playlist card",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "23 — Succulent pot",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "24 — Skincare set",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "25 — Craft chocolate",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "26 — Keychain with a story",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "27 — Journal and pen",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "28 — Picnic blanket",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "29 — Cute lamp",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "30 — Cooking spice set",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "31 — Movie night box",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "32 — Experience voucher",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "33 — Plant care kit",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "34 — Puzzle book",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "35 — Local pottery",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "36 — Phone stand",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "37 — Tea infuser",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "38 — Canvas tote",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "39 — Mini projector",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "40 — Memory card game",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "41 — Bicycle accessory",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "42 — Desk calendar",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "43 — Dried flower bouquet",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "44 — Hobby starter kit",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "45 — Personalized bookmark",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "46 — Travel map",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "47 — Fountain pen",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "48 — Photo album",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "49 — Sleep mask",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      },
+      {
+        "title": "50 — Gift card with a personal note",
+        "description": "A simple what should i buy as a gift? idea to try today."
+      }
+    ]
+  },
+  {
+    "title": "What snack should we have?",
+    "items": [
+      {
+        "title": "01 — Popcorn",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "02 — Fruit bowl",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "03 — Nachos",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "04 — Yogurt and honey",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "05 — Hummus plate",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "06 — Cheese toast",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "07 — Dates and walnuts",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "08 — Banana smoothie",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "09 — Chips and dip",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "10 — Granola bowl",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "11 — Chocolate-covered fruit",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "12 — Mini sandwiches",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "13 — Roasted chickpeas",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "14 — Cucumber and feta",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "15 — Peanut butter toast",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "16 — Mango slices",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "17 — Trail mix",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "18 — Corn on the cob",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "19 — Cinnamon toast",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "20 — Pita and labneh",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "21 — Frozen grapes",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "22 — Carrot sticks",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "23 — Brownie bites",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "24 — Apple with tahini",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "25 — Spiced nuts",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "26 — Avocado toast",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "27 — Rice cakes",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "28 — Mini pancakes",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "29 — Cheese board",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "30 — Strawberry bowl",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "31 — Sweet potato fries",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "32 — Tortilla chips",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "33 — Coconut balls",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "34 — Boiled eggs",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "35 — Fruit yogurt",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "36 — Crispy lavash",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "37 — Tuna crackers",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "38 — Homemade energy balls",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "39 — Garlic bread",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "40 — Pickled vegetables",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "41 — Sesame cookies",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "42 — Milkshake",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "43 — Olive plate",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "44 — Popcorn with a new spice",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "45 — Peach and cream",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "46 — Mini pizza bites",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "47 — Cereal mix",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "48 — Lemon cucumber",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "49 — Date smoothie",
+        "description": "A simple what snack should we have? idea to try today."
+      },
+      {
+        "title": "50 — Surprise snack box",
+        "description": "A simple what snack should we have? idea to try today."
+      }
+    ]
+  },
+  {
+    "title": "What should we talk about?",
+    "items": [
+      {
+        "title": "01 — A dream trip",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "02 — A childhood memory",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "03 — A skill to learn",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "04 — A favorite meal",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "05 — A tiny daily win",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "06 — A book that changed you",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "07 — The perfect weekend",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "08 — A funny first impression",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "09 — A place to revisit",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "10 — A personal value",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "11 — A comfort movie",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "12 — A future project",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "13 — A habit to improve",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "14 — A surprising fact",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "15 — The best advice received",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "16 — A food you want to try",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "17 — A dream home",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "18 — A creative hobby",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "19 — A risk worth taking",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "20 — A song tied to a memory",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "21 — A local hidden gem",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "22 — A goal for this month",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "23 — A funny travel story",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "24 — A fictional superpower",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "25 — A tradition to start",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "26 — A person who inspires you",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "27 — A small act of kindness",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "28 — A personal definition of success",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "29 — A new technology",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "30 — A lesson from failure",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "31 — A perfect morning",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "32 — A favorite smell",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "33 — A question with no answer",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "34 — A skill you can teach",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "35 — A place that feels like home",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "36 — A recent curiosity",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "37 — A meaningful object",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "38 — A future celebration",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "39 — A life rule to break",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "40 — A movie ending",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "41 — A team dream",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "42 — A memory in one photo",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "43 — A hobby to share",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "44 — A challenge to try",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "45 — A historical era",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "46 — A tiny luxury",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "47 — A new recipe idea",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "48 — A cause you care about",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "49 — A thing you are grateful for",
+        "description": "A simple what should we talk about? idea to try today."
+      },
+      {
+        "title": "50 — A question for your future self",
+        "description": "A simple what should we talk about? idea to try today."
+      }
+    ]
+  },
+  {
+    "title": "How can I reset my mood?",
+    "items": [
+      {
+        "title": "01 — Take ten slow breaths",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "02 — Drink a glass of water",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "03 — Open a window",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "04 — Walk for five minutes",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "05 — Put on an upbeat song",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "06 — Tidy one small surface",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "07 — Stretch your shoulders",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "08 — Write what feels heavy",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "09 — Take a warm shower",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "10 — Make tea",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "11 — Look at the sky",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "12 — Text a trusted friend",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "13 — Change rooms",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "14 — Do a box breathing cycle",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "15 — Eat something nourishing",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "16 — Turn off notifications",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "17 — Watch a calming clip",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "18 — Make your bed",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "19 — Step outside",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "20 — Name five things you see",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "21 — Try gentle yoga",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "22 — Draw without judging",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "23 — Read a page",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "24 — Wash your face",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "25 — Set a ten-minute timer",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "26 — Laugh at a silly video",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "27 — Water a plant",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "28 — Put on fresh clothes",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "29 — Listen to rain sounds",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "30 — Write three good things",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "31 — Do a short dance",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "32 — Make a simple snack",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "33 — Sit in sunlight",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "34 — Breathe with a count",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "35 — Organize tomorrow",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "36 — Take a screen break",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "37 — Pet an animal",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "38 — Light a candle",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "39 — Use a grounding object",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "40 — Walk around the block",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "41 — Say the feeling out loud",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "42 — Do one easy task",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "43 — Look through a happy album",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "44 — Try progressive relaxation",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "45 — Make a cozy corner",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "46 — Stretch your legs",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "47 — Have a quiet cup of tea",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "48 — Choose one kind thought",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "49 — Rest without guilt",
+        "description": "A simple how can i reset my mood? idea to try today."
+      },
+      {
+        "title": "50 — Start again gently",
+        "description": "A simple how can i reset my mood? idea to try today."
+      }
+    ]
+  },
+  {
+    "title": "What workout can I do at home?",
+    "items": [
+      {
+        "title": "01 — Ten-minute walk",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "02 — Bodyweight squats",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "03 — Wall push-ups",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "04 — Plank practice",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "05 — Glute bridges",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "06 — March in place",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "07 — Standing side bends",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "08 — Lunges",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "09 — Calf raises",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "10 — Chair dips",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "11 — Bird-dog",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "12 — Dead bug",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "13 — Mountain climbers",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "14 — Low-impact jumping jacks",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "15 — Shoulder mobility",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "16 — Hip stretches",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "17 — Yoga flow",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "18 — Dance workout",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "19 — Core circuit",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "20 — Arm circles",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "21 — Step-ups",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "22 — Wall sit",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "23 — Hamstring stretch",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "24 — Bear crawl",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "25 — Reverse lunges",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "26 — Push-up negatives",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "27 — Side plank",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "28 — Superman hold",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "29 — Balance practice",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "30 — Shadow boxing",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "31 — Knee lifts",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "32 — Toe touches",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "33 — Pike stretch",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "34 — Thoracic rotations",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "35 — Single-leg balance",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "36 — Squat pulses",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "37 — Tricep extensions",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "38 — Cobra stretch",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "39 — High knees",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "40 — Child’s pose",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "41 — Resistance-band rows",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "42 — Marching bridge",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "43 — Ankle mobility",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "44 — Chest opener",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "45 — Quick cardio circuit",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "46 — Standing crunches",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "47 — Hamstring curls",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "48 — Slow burpees",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "49 — Full-body stretch",
+        "description": "A simple what workout can i do at home? idea to try today."
+      },
+      {
+        "title": "50 — Five-minute cooldown",
+        "description": "A simple what workout can i do at home? idea to try today."
+      }
+    ]
+  },
+  {
+    "title": "What should I learn next?",
+    "items": [
+      {
+        "title": "01 — Basic photography",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "02 — A new language",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "03 — How to cook one dish",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "04 — Personal budgeting",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "05 — First-aid basics",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "06 — Creative writing",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "07 — Simple drawing",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "08 — Public speaking",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "09 — A spreadsheet skill",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "10 — Memory techniques",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "11 — Basic coding",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "12 — Bread baking",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "13 — Meditation basics",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "14 — How to grow herbs",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "15 — Video editing",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "16 — Typography",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "17 — Map reading",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "18 — A musical rhythm",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "19 — How to repair a button",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "20 — Research skills",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "21 — A new card trick",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "22 — Home organization",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "23 — Presentation design",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "24 — Conversational listening",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "25 — Digital privacy",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "26 — Making a good resume",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "27 — Bird identification",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "28 — Coffee brewing",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "29 — Travel planning",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "30 — Basic sewing",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "31 — How to take notes",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "32 — A new workout skill",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "33 — Storytelling",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "34 — Simple investing concepts",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "35 — Color theory",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "36 — How to make a podcast",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "37 — Time blocking",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "38 — A local history topic",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "39 — Negotiation basics",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "40 — Plant care",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "41 — Creative brainstorming",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "42 — How to make a budget meal",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "43 — Keyboard shortcuts",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "44 — Mindful walking",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "45 — A science topic",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "46 — How to edit photos",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "47 — A new board game",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "48 — Basic sign language",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "49 — How to host a dinner",
+        "description": "A simple what should i learn next? idea to try today."
+      },
+      {
+        "title": "50 — One useful thing from a course",
+        "description": "A simple what should i learn next? idea to try today."
+      }
+    ]
+  },
+  {
+    "title": "What should I photograph?",
+    "items": [
+      {
+        "title": "01 — A shadow pattern",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "02 — A colorful door",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "03 — Morning light",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "04 — A reflection",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "05 — A tiny texture",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "06 — A local sign",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "07 — A cup of tea",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "08 — A moving bicycle",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "09 — A quiet window",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "10 — A street cat",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "11 — A line of trees",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "12 — A dramatic cloud",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "13 — An old staircase",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "14 — A favorite object",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "15 — A market detail",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "16 — Hands making something",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "17 — A close-up of fabric",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "18 — A symmetry study",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "19 — A rainy street",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "20 — A forgotten corner",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "21 — A portrait in window light",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "22 — A bright fruit bowl",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "23 — A long exposure of lights",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "24 — A bird on a wire",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "25 — A repeating pattern",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "26 — A door handle",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "27 — A self-portrait shadow",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "28 — A neighborhood map",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "29 — A stack of books",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "30 — A sunset silhouette",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "31 — A blue object",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "32 — A red object",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "33 — A tiny plant",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "34 — A passing moment",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "35 — A low-angle building",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "36 — A high-angle table",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "37 — A frame within a frame",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "38 — A texture in nature",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "39 — A photo of motion",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "40 — A minimal composition",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "41 — A reflection in glass",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "42 — A favorite pair of shoes",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "43 — A street-food scene",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "44 — A single leaf",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "45 — A night light",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "46 — A local craft",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "47 — A candid detail",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "48 — A color hunt",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "49 — A before-and-after scene",
+        "description": "A simple what should i photograph? idea to try today."
+      },
+      {
+        "title": "50 — A photo story in three frames",
+        "description": "A simple what should i photograph? idea to try today."
+      }
+    ]
+  }
+]
