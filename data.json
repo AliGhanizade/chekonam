@@ -1,19 +1,168 @@
 {
-  "app": {"name": "چه کنم؟", "defaultCategory": "food", "maxCustomOptions": 12, "version": "1.0.0"},
+  "app": {
+    "name": "چه کنم؟",
+    "defaultCategory": "food",
+    "maxCustomOptions": 12,
+    "version": "2.0.0",
+    "catalog": "data/catalog.json"
+  },
   "categories": [
-    {"id":"food","title":"چی بخورم؟","description":"یک لقمه‌ی خوب برای امروز","icon":"✦","color":"#ffab73","file":"data/food.json"},
-    {"id":"date","title":"قرار و دیت","description":"ایده‌ای برای با هم بودن","icon":"◌","color":"#ff8fa3","file":"data/date.json"},
-    {"id":"out","title":"بریم بیرون؟","description":"یک مسیر تازه کشف کن","icon":"↗","color":"#72d8d2","file":"data/out.json"},
-    {"id":"with","title":"با کی برم؟","description":"همراه مناسب امروز","icon":"∞","color":"#8d7dff","file":"data/with.json"},
-    {"id":"should","title":"انجامش بدم؟","description":"بین بله و نه معلق نمان","icon":"✓","color":"#d8f36b","file":"data/should.json"},
-    {"id":"game","title":"یک بازی کوتاه","description":"برای جمع یا تنهایی","icon":"◇","color":"#c8bfff","file":"data/game.json"},
-    {"id":"dice","title":"تاس تصمیم","description":"عدد شانس تو چیست؟","icon":"⚄","color":"#ffce73","file":"data/dice.json"},
-    {"id":"ideas","title":"ایده می‌خوام","description":"جرقه‌ای برای شروع","icon":"✧","color":"#9fe3ff","file":"data/ideas.json"}
+    {
+      "id": "food",
+      "title": "غذا چی درست کنم؟",
+      "description": "24 ایده برای انتخاب",
+      "icon": "✦",
+      "color": "#ffab73",
+      "index": 0
+    },
+    {
+      "id": "date",
+      "title": "کجا بریم دیت؟",
+      "description": "24 ایده برای انتخاب",
+      "icon": "◌",
+      "color": "#ff8fa3",
+      "index": 1
+    },
+    {
+      "id": "group",
+      "title": "الان دور همیم، چیکار کنیم؟",
+      "description": "24 ایده برای انتخاب",
+      "icon": "∞",
+      "color": "#72d8d2",
+      "index": 2
+    },
+    {
+      "id": "games",
+      "title": "بازی گروهی نشسته و ساده",
+      "description": "24 ایده برای انتخاب",
+      "icon": "◇",
+      "color": "#c8bfff",
+      "index": 3
+    },
+    {
+      "id": "movies",
+      "title": "چه فیلم یا سریالی ببينیم؟",
+      "description": "24 ایده برای انتخاب",
+      "icon": "▣",
+      "color": "#9fe3ff",
+      "index": 4
+    },
+    {
+      "id": "weekend",
+      "title": "آخر هفته کجا سفر کوتاه یا پیک‌نیک برویم؟",
+      "description": "24 ایده برای انتخاب",
+      "icon": "↗",
+      "color": "#d8f36b",
+      "index": 5
+    },
+    {
+      "id": "alone",
+      "title": "وقتی تنهاییم و حوصلمون سر رفته چیکار کنیم؟",
+      "description": "24 ایده برای انتخاب",
+      "icon": "☾",
+      "color": "#b993ff",
+      "index": 6
+    },
+    {
+      "id": "gifts",
+      "title": "به عنوان هدیه یا کادو چی بخریم؟",
+      "description": "24 ایده برای انتخاب",
+      "icon": "＋",
+      "color": "#ffce73",
+      "index": 7
+    },
+    {
+      "id": "snacks",
+      "title": "میان‌وعده یا تنقلات چی بخوریم؟",
+      "description": "24 ایده برای انتخاب",
+      "icon": "◒",
+      "color": "#ff9eaa",
+      "index": 8
+    },
+    {
+      "id": "talk",
+      "title": "درباره چی گفتگو یا بحث کنیم؟",
+      "description": "24 ایده برای انتخاب",
+      "icon": "✧",
+      "color": "#b4ffbe",
+      "index": 9
+    },
+    {
+      "id": "calm",
+      "title": "کاهش استرس و تغییر روحیه",
+      "description": "24 ایده برای انتخاب",
+      "icon": "◐",
+      "color": "#8de8ff",
+      "index": 10
+    },
+    {
+      "id": "workout",
+      "title": "ورزش و تحرک در خانه",
+      "description": "24 ایده برای انتخاب",
+      "icon": "↯",
+      "color": "#ffbd7a",
+      "index": 11
+    },
+    {
+      "id": "learn",
+      "title": "برای ارتقای فردی چی یاد بگیریم؟",
+      "description": "24 ایده برای انتخاب",
+      "icon": "⌁",
+      "color": "#d2b6ff",
+      "index": 12
+    },
+    {
+      "id": "photo",
+      "title": "ایده برای عکاسی",
+      "description": "24 ایده برای انتخاب",
+      "icon": "▧",
+      "color": "#84d4cf",
+      "index": 13
+    }
   ],
   "sounds": [
-    {"id":"rain","title":"باران ریز","subtitle":"soft rain · low pass","color":"#72d8d2","type":"rain","filter":1050,"volume":0.12,"frequency":180,"wave":"sine"},
-    {"id":"cafe","title":"کافه‌ی دور","subtitle":"warm room tone","color":"#ffab73","type":"cafe","filter":1250,"volume":0.055,"frequency":196,"wave":"triangle"},
-    {"id":"space","title":"مدار آرام","subtitle":"deep space pad","color":"#8d7dff","type":"space","volume":0.08,"frequency":110,"wave":"sine"},
-    {"id":"forest","title":"جنگل بعد باران","subtitle":"soft wind","color":"#d8f36b","type":"forest","filter":620,"volume":0.08,"frequency":92,"wave":"triangle"}
+    {
+      "id": "rain",
+      "title": "باران ریز",
+      "subtitle": "soft rain · low pass",
+      "color": "#72d8d2",
+      "type": "rain",
+      "filter": 1050,
+      "volume": 0.12,
+      "frequency": 180,
+      "wave": "sine"
+    },
+    {
+      "id": "cafe",
+      "title": "کافه‌ی دور",
+      "subtitle": "warm room tone",
+      "color": "#ffab73",
+      "type": "cafe",
+      "filter": 1250,
+      "volume": 0.055,
+      "frequency": 196,
+      "wave": "triangle"
+    },
+    {
+      "id": "space",
+      "title": "مدار آرام",
+      "subtitle": "deep space pad",
+      "color": "#8d7dff",
+      "type": "space",
+      "volume": 0.08,
+      "frequency": 110,
+      "wave": "sine"
+    },
+    {
+      "id": "forest",
+      "title": "جنگل بعد باران",
+      "subtitle": "soft wind",
+      "color": "#d8f36b",
+      "type": "forest",
+      "filter": 620,
+      "volume": 0.08,
+      "frequency": 92,
+      "wave": "triangle"
+    }
   ]
 }
