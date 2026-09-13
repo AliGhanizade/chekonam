@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090b15" />
+  <meta name="description" content="چه کنم؟ یک بوم تعاملی برای انتخاب‌های کوچک و بزرگ روزمره." />
+  <title>چه کنم؟ — تصمیم‌های کوچک، حس بهتر</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="صفحه‌ی اصلی چه کنم؟">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span><strong>چه کنم؟</strong><small>decision playground</small></span>
+      </a>
+      <nav class="top-actions" aria-label="ابزارها">
+        <button class="icon-button" id="soundToggle" type="button" aria-label="روشن و خاموش کردن صدا"><span class="sound-icon">◖</span><span>صدا</span></button>
+        <button class="icon-button" id="adminToggle" type="button" aria-label="باز کردن پنل مدیریت"><span>⌘</span><span>مدیریت</span></button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="pulse-dot"></span> بوم تصمیم‌گیری شخصی تو</p>
+          <h1>گاهی فقط باید<br /><em>یک راه را امتحان کرد.</em></h1>
+          <p class="hero-text">بین گزینه‌ها گیر کردی؟ موضوعت را انتخاب کن، یک نفس بکش و بگذار شانس، بازی را شروع کند.</p>
+          <div class="hero-actions">
+            <button class="primary-button" id="surpriseButton" type="button">غافلگیرم کن <span>↗</span></button>
+            <button class="text-button" id="howButton" type="button">چطور کار می‌کند؟ <span>↓</span></button>
+          </div>
+        </div>
+        <div class="orb-stage" aria-hidden="true">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="planet"><span class="planet-glow"></span><span class="planet-line"></span><span class="planet-dot dot-one"></span><span class="planet-dot dot-two"></span></div>
+          <div class="floating-chip chip-one">امشب چی؟</div><div class="floating-chip chip-two">بریم بیرون؟</div><div class="floating-chip chip-three">شیر یا خط</div>
+        </div>
+      </section>
+
+      <section class="workspace-section" id="playground">
+        <div class="section-heading"><div><p class="eyebrow">01 / انتخاب کن</p><h2>دنبال چه جوابی هستی؟</h2></div><span class="section-note">هر بار یک مسیر تازه</span></div>
+        <div class="category-grid" id="categoryGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="decision-panel" id="decisionPanel" hidden>
+        <div class="decision-header"><div><p class="eyebrow" id="decisionEyebrow">موضوع انتخاب‌شده</p><h2 id="decisionTitle">آماده‌ای؟</h2></div><button class="close-button" id="closeDecision" type="button" aria-label="بستن">×</button></div>
+        <div class="decision-layout">
+          <div class="decision-wheel-wrap"><canvas id="decisionCanvas" width="480" height="480" aria-label="گردونه‌ی انتخاب"></canvas><div class="wheel-pointer">◆</div><div class="wheel-center" id="wheelCenter">شروع</div></div>
+          <div class="decision-copy"><span class="result-kicker" id="resultKicker">تصمیمت را بسپار به لحظه</span><h3 id="resultTitle">یک گزینه را انتخاب کن</h3><p id="resultDescription">می‌توانی گردونه را بچرخانی یا از بین کارت‌های پایین، شانس خودت را امتحان کنی.</p><button class="primary-button wide" id="spinButton" type="button">بچرخان <span>↻</span></button><div class="result-meta"><span id="resultCount">۰ انتخاب امروز</span><button class="ghost-button" id="rerollButton" type="button">یک گزینه‌ی دیگر</button></div></div>
+        </div>
+        <div class="option-cards" id="optionCards"></div>
+      </section>
+
+      <section class="custom-section" id="customSection">
+        <div class="custom-copy"><p class="eyebrow">بوم خودت را بساز</p><h2>گزینه‌های خودت را وارد کن.</h2><p>برای تصمیم‌های خیلی شخصی، یک موضوع بساز و گزینه‌هایت را داخلش بریز. این لیست فقط روی همین مرورگر ذخیره می‌شود.</p></div>
+        <form class="custom-form" id="customForm"><label>نام موضوع<input id="customTitle" required maxlength="40" placeholder="مثلاً: فیلم‌های امشب" /></label><label>گزینه‌ها <span class="label-hint">هر گزینه در یک خط</span><textarea id="customOptions" required rows="5" placeholder="فیلم ببینم\nکتاب بخوانم\nزود بخوابم"></textarea></label><button class="secondary-button" type="submit">ساختن بوم من <span>＋</span></button></form>
+      </section>
+
+      <section class="sound-section">
+        <div class="section-heading"><div><p class="eyebrow">02 / فضا بساز</p><h2>صدای امروزت را میکس کن.</h2></div><span class="section-note">برای تمرکز یا حال خوب</span></div>
+        <div class="soundboard" id="soundboard"><div class="soundboard-info"><span class="soundboard-icon">♫</span><div><h3>میکسر کوچک</h3><p>کارت‌ها را روشن کن و ترکیب خودت را بساز.</p></div><span class="playing-bars" id="playingBars"><i></i><i></i><i></i><i></i></span></div><div class="sound-list" id="soundList"></div></div>
+      </section>
+
+      <section class="how-section" id="howSection"><p class="eyebrow">ساده، شخصی، بدون حساب کاربری</p><div class="how-grid"><article><span>۱</span><h3>یک موضوع بردار</h3><p>از غذا و قرار تا تصمیم‌های لحظه‌ای، یکی را انتخاب کن.</p></article><article><span>۲</span><h3>اجازه بده بازی کند</h3><p>گردونه را بچرخان یا یک کارت را لمس کن؛ جواب همین نزدیکی است.</p></article><article><span>۳</span><h3>نتیجه را مال خودت کن</h3><p>رکوردها و تنظیماتت روی مرورگر ذخیره می‌شوند، بدون ثبت‌نام.</p></article></div></section>
+    </main>
+
+    <footer class="footer"><span>ساخته شده برای تصمیم‌های کوچک زندگی.</span><span>© ۱۴۰۵ چه کنم؟</span></footer>
+  </div>
+
+  <aside class="admin-drawer" id="adminDrawer" aria-label="پنل مدیریت" aria-hidden="true"><div class="drawer-header"><div><p class="eyebrow">کنترل‌خانه</p><h2>پنل مدیریت</h2></div><button class="close-button" id="closeAdmin" type="button">×</button></div><div class="admin-note">این آمار محلی است و فقط روی همین دستگاه ثبت می‌شود؛ برای آمار واقعی همه‌ی کاربران به بک‌اند یا سرویس تحلیل نیاز است.</div><div class="stats-grid" id="statsGrid"></div><div class="chart-card"><div class="chart-heading"><h3>انتخاب‌ها در ۷ روز اخیر</h3><span id="chartTotal">۰</span></div><div class="mini-chart" id="miniChart"></div></div><div class="feature-controls"><h3>قابلیت‌ها</h3><label class="switch-row">افکت‌های بصری <input type="checkbox" data-setting="effects" checked /><span class="switch"></span></label><label class="switch-row">پیشنهاد غافلگیرکننده <input type="checkbox" data-setting="surprise" checked /><span class="switch"></span></label><label class="switch-row">میکسر صدا <input type="checkbox" data-setting="sounds" checked /><span class="switch"></span></label></div><button class="danger-button" id="clearLocalData" type="button">پاک کردن داده‌های این مرورگر</button></aside><div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <div class="toast" id="toast" role="status"></div><div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
