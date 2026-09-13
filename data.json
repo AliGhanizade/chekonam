@@ -3,121 +3,107 @@
     "name": "چه کنم؟",
     "defaultCategory": "food",
     "maxCustomOptions": 12,
-    "version": "2.0.0",
+    "version": "2.1.0",
     "catalog": "data/catalog.json"
   },
   "categories": [
     {
       "id": "food",
       "title": "غذا چی درست کنم؟",
-      "description": "50 ایده برای انتخاب",
+      "description": "65 ایده برای انتخاب",
       "icon": "✦",
-      "color": "#ffab73",
-      "index": 0
+      "color": "#ffab73"
     },
     {
       "id": "date",
       "title": "کجا بریم دیت؟",
-      "description": "50 ایده برای انتخاب",
+      "description": "47 ایده برای انتخاب",
       "icon": "◌",
-      "color": "#ff8fa3",
-      "index": 1
+      "color": "#ff8fa3"
     },
     {
       "id": "group",
       "title": "الان دور همیم، چیکار کنیم؟",
-      "description": "50 ایده برای انتخاب",
+      "description": "39 ایده برای انتخاب",
       "icon": "∞",
-      "color": "#72d8d2",
-      "index": 2
+      "color": "#72d8d2"
     },
     {
       "id": "games",
       "title": "بازی گروهی نشسته و ساده",
-      "description": "50 ایده برای انتخاب",
+      "description": "44 ایده برای انتخاب",
       "icon": "◇",
-      "color": "#c8bfff",
-      "index": 3
+      "color": "#c8bfff"
     },
     {
       "id": "movies",
       "title": "چه فیلم یا سریالی ببينیم؟",
-      "description": "50 ایده برای انتخاب",
+      "description": "36 ایده برای انتخاب",
       "icon": "▣",
-      "color": "#9fe3ff",
-      "index": 4
+      "color": "#9fe3ff"
     },
     {
       "id": "weekend",
       "title": "آخر هفته کجا سفر کوتاه یا پیک‌نیک برویم؟",
-      "description": "50 ایده برای انتخاب",
+      "description": "42 ایده برای انتخاب",
       "icon": "↗",
-      "color": "#d8f36b",
-      "index": 5
+      "color": "#d8f36b"
     },
     {
       "id": "alone",
       "title": "وقتی تنهاییم و حوصلمون سر رفته چیکار کنیم؟",
-      "description": "50 ایده برای انتخاب",
+      "description": "48 ایده برای انتخاب",
       "icon": "☾",
-      "color": "#b993ff",
-      "index": 6
+      "color": "#b993ff"
     },
     {
       "id": "gifts",
       "title": "به عنوان هدیه یا کادو چی بخریم؟",
-      "description": "50 ایده برای انتخاب",
+      "description": "38 ایده برای انتخاب",
       "icon": "＋",
-      "color": "#ffce73",
-      "index": 7
+      "color": "#ffce73"
     },
     {
       "id": "snacks",
       "title": "میان‌وعده یا تنقلات چی بخوریم؟",
-      "description": "50 ایده برای انتخاب",
+      "description": "45 ایده برای انتخاب",
       "icon": "◒",
-      "color": "#ff9eaa",
-      "index": 8
+      "color": "#ff9eaa"
     },
     {
       "id": "talk",
       "title": "درباره چی گفتگو یا بحث کنیم؟",
-      "description": "50 ایده برای انتخاب",
+      "description": "37 ایده برای انتخاب",
       "icon": "✧",
-      "color": "#b4ffbe",
-      "index": 9
+      "color": "#b4ffbe"
     },
     {
       "id": "calm",
       "title": "کاهش استرس و تغییر روحیه",
-      "description": "50 ایده برای انتخاب",
+      "description": "41 ایده برای انتخاب",
       "icon": "◐",
-      "color": "#8de8ff",
-      "index": 10
+      "color": "#8de8ff"
     },
     {
       "id": "workout",
       "title": "ورزش و تحرک در خانه",
-      "description": "50 ایده برای انتخاب",
+      "description": "49 ایده برای انتخاب",
       "icon": "↯",
-      "color": "#ffbd7a",
-      "index": 11
+      "color": "#ffbd7a"
     },
     {
       "id": "learn",
       "title": "برای ارتقای فردی چی یاد بگیریم؟",
-      "description": "50 ایده برای انتخاب",
+      "description": "36 ایده برای انتخاب",
       "icon": "⌁",
-      "color": "#d2b6ff",
-      "index": 12
+      "color": "#d2b6ff"
     },
     {
       "id": "photo",
       "title": "ایده برای عکاسی",
-      "description": "50 ایده برای انتخاب",
+      "description": "43 ایده برای انتخاب",
       "icon": "▧",
-      "color": "#84d4cf",
-      "index": 13
+      "color": "#84d4cf"
     }
   ]
 }
