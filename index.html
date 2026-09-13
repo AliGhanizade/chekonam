@@ -20,6 +20,7 @@
         <span><strong>چه کنم؟</strong><small>decision playground</small></span>
       </a>
       <nav class="top-actions" aria-label="ابزارها">
+        <button class="icon-button" id="languageToggle" type="button" aria-label="تغییر زبان"><span>EN</span><span>زبان</span></button>
         <button class="icon-button" id="appearanceToggle" type="button" aria-label="باز کردن تنظیمات ظاهر"><span>✦</span><span>ظاهر</span></button>
         <button class="icon-button" id="adminToggle" type="button" aria-label="باز کردن پنل مدیریت"><span>⌘</span><span>مدیریت</span></button>
       </nav>
@@ -54,13 +55,12 @@
           <button class="mode-button active" data-mode="cards" type="button"><span>▣</span><small>کارت‌های مخفی</small></button>
           <button class="mode-button" data-mode="auto" type="button"><span>✦</span><small>انتخاب خودکار</small></button>
           <button class="mode-button" data-mode="scratch" type="button"><span>⌁</span><small>بخت‌آزمایی</small></button>
-          <button class="mode-button" data-mode="box" type="button"><span>□</span><small>جعبه‌ی نورانی</small></button>
         </div>
         <div class="decision-layout">
-          <div class="decision-wheel-wrap" id="decisionVisual"><div class="mystery-stage" id="mysteryStage"><div class="card-count-control"><label for="cardCount">تعداد کارت</label><output id="cardCountValue">۳</output><input id="cardCount" type="range" min="2" max="7" value="3" /></div><div id="mysteryCards"></div><small>بعد از انتخاب، کارت‌های دیگر قفل می‌شوند؛ برای انتخاب دوباره، کارت‌های تازه را بزن.</small></div><div class="auto-stage" id="autoStage" hidden><span class="auto-orbit">✦</span><strong>در حال پیدا کردن...</strong><small>از بین همه‌ی گزینه‌ها یک انتخاب پیدا می‌کنم.</small></div><div class="scratch-stage" id="scratchStage" hidden><div class="scratch-card" id="scratchCard"><div class="scratch-copy"><span class="scratch-kicker">پشت این پوشش یک انتخاب پنهان است</span><strong id="scratchRevealText">یک گزینه‌ی ناشناس</strong><small>با انگشت بکش و بخراش</small></div><canvas id="scratchCanvas" width="360" height="230" aria-label="کارت بخت‌آزمایی"></canvas><span class="scratch-hint">خراش بده</span></div><small>پوشش تیره را با drag ماوس یا انگشت پاک کن.</small></div><div class="box-stage" id="boxStage" hidden><div class="glow-box" id="glowBox"><span class="box-lid"></span><span class="box-light"></span><span class="box-content">?</span><span class="box-spark spark-a">✦</span><span class="box-spark spark-b">✧</span><span class="box-spark spark-c">·</span></div><strong id="boxClicks">۴ کلیک تا باز شدن</strong><small>هر کلیک، نور بیشتری از جعبه بیرون می‌فرستد.</small></div></div>
+          <div class="decision-wheel-wrap" id="decisionVisual"><div class="mystery-stage" id="mysteryStage"><div class="card-count-control"><label for="cardCount">تعداد کارت</label><output id="cardCountValue">۳</output><input id="cardCount" type="range" min="2" max="7" value="3" /></div><div id="mysteryCards"></div><small>بعد از انتخاب، کارت‌های دیگر قفل می‌شوند؛ برای انتخاب دوباره، کارت‌های تازه را بزن.</small></div><div class="auto-stage" id="autoStage" hidden><span class="auto-orbit">✦</span><strong>در حال پیدا کردن...</strong><small>از بین همه‌ی گزینه‌ها یک انتخاب پیدا می‌کنم.</small></div><div class="scratch-stage" id="scratchStage" hidden><div class="scratch-card" id="scratchCard"><div class="scratch-copy"><span class="scratch-kicker">پشت این پوشش یک انتخاب پنهان است</span><strong id="scratchRevealText">یک گزینه‌ی ناشناس</strong><small>با انگشت بکش و بخراش</small></div><canvas id="scratchCanvas" width="360" height="230" aria-label="کارت بخت‌آزمایی"></canvas><span class="scratch-hint">خراش بده</span></div><small>پوشش تیره را با drag ماوس یا انگشت پاک کن.</small></div></div>
           <div class="decision-copy"><span class="result-kicker" id="resultKicker">سه کارت ناشناس</span><h3 id="resultTitle">یک گزینه را انتخاب کن</h3><p id="resultDescription">تعداد کارت‌ها را انتخاب کن و یکی را لمس کن؛ بعد از انتخاب، همان دور قفل می‌شود.</p><button class="primary-button wide" id="spinButton" type="button">کارت‌های تازه <span>↻</span></button><div class="result-meta"><span id="resultCount">۰ انتخاب امروز</span><button class="ghost-button" id="rerollButton" type="button">شروع دوباره</button></div></div>
         </div>
-        <div class="option-cards" id="optionCards"></div>
+        <div class="option-list-tools"><label for="optionSearch">جست‌وجوی گزینه‌ها</label><input id="optionSearch" type="search" placeholder="مثلاً کافه، فیلم یا ورزش..." autocomplete="off" /><span id="excludedCount">۰ خط‌خورده</span></div><div class="option-cards" id="optionCards"></div>
       </section>
 
       <section class="custom-section" id="customSection">
@@ -68,7 +68,7 @@
         <form class="custom-form" id="customForm"><label>نام موضوع<input id="customTitle" required maxlength="40" placeholder="مثلاً: فیلم‌های امشب" /></label><label>گزینه‌ها <span class="label-hint">هر گزینه در یک خط</span><textarea id="customOptions" required rows="5" placeholder="فیلم ببینم\nکتاب بخوانم\nزود بخوابم"></textarea></label><button class="secondary-button" type="submit">ساختن بوم من <span>＋</span></button></form>
       </section>
 
-      <section class="how-section" id="howSection"><p class="eyebrow">ساده، شخصی، بدون حساب کاربری</p><div class="how-grid"><article><span>۱</span><h3>یک موضوع بردار</h3><p>از غذا و قرار تا تصمیم‌های لحظه‌ای، یکی را انتخاب کن.</p></article><article><span>۲</span><h3>یک بازی انتخاب کن</h3><p>کارت مخفی، بخت‌آزمایی دستی یا جعبه‌ی نورانی را امتحان کن.</p></article><article><span>۳</span><h3>نتیجه را مال خودت کن</h3><p>آخرین انتخاب و تنظیماتت روی مرورگر ذخیره می‌شوند، بدون ثبت‌نام.</p></article></div></section>
+      <section class="how-section" id="howSection"><p class="eyebrow">ساده، شخصی، بدون حساب کاربری</p><div class="how-grid"><article><span>۱</span><h3>یک موضوع بردار</h3><p>از غذا و قرار تا تصمیم‌های لحظه‌ای، یکی را انتخاب کن.</p></article><article><span>۲</span><h3>یک بازی انتخاب کن</h3><p>کارت مخفی، انتخاب خودکار یا بخت‌آزمایی دستی را امتحان کن.</p></article><article><span>۳</span><h3>نتیجه را مال خودت کن</h3><p>آخرین انتخاب و تنظیماتت روی مرورگر ذخیره می‌شوند، بدون ثبت‌نام.</p></article></div></section>
     </main>
 
     <footer class="footer"><span>ساخته شده برای تصمیم‌های کوچک زندگی.</span><span>© ۱۴۰۵ چه کنم؟</span></footer>
