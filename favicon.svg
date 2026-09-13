@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title>چه کنم؟</title>
+  <desc>یک سیاره‌ی کوچک با حلقه‌ی درخشان</desc>
+  <defs>
+    <radialGradient id="bg" cx="30%" cy="20%" r="90%">
+      <stop offset="0" stop-color="#2d3767"/>
+      <stop offset="1" stop-color="#090b15"/>
+    </radialGradient>
+    <linearGradient id="planet" x1="15%" y1="10%" x2="85%" y2="90%">
+      <stop offset="0" stop-color="#b993ff"/>
+      <stop offset=".55" stop-color="#5260a8"/>
+      <stop offset="1" stop-color="#18203e"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d8f36b"/>
+      <stop offset=".52" stop-color="#72d8d2"/>
+      <stop offset="1" stop-color="#8d7dff"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2.2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="64" height="64" rx="17" fill="url(#bg)"/>
+  <circle cx="47" cy="15" r="2" fill="#d8f36b" filter="url(#glow)"/>
+  <circle cx="18" cy="18" r="1.4" fill="#72d8d2"/>
+  <ellipse cx="32" cy="35" rx="24" ry="9.5" fill="none" stroke="url(#ring)" stroke-width="4" transform="rotate(-18 32 35)" opacity=".95"/>
+  <circle cx="32" cy="32" r="14" fill="url(#planet)" stroke="#c8bfff" stroke-opacity=".48" stroke-width="1.2"/>
+  <path d="M22 29c5-3 11-3 19 0M24 38c4-2 8-2 13 0" fill="none" stroke="#72d8d2" stroke-opacity=".38" stroke-width="1.4" stroke-linecap="round"/>
+  <circle cx="27" cy="26" r="2.2" fill="#d8f36b" filter="url(#glow)"/>
+  <path d="M10 39c8 7 20 11 33 9" fill="none" stroke="url(#ring)" stroke-width="2" stroke-linecap="round" opacity=".8"/>
+</svg>
