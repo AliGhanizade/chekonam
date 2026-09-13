@@ -1,0 +1,19 @@
+{
+  "app": {"name": "چه کنم؟", "defaultCategory": "food", "maxCustomOptions": 12, "version": "1.0.0"},
+  "categories": [
+    {"id":"food","title":"چی بخورم؟","description":"یک لقمه‌ی خوب برای امروز","icon":"✦","color":"#ffab73","file":"data/food.json"},
+    {"id":"date","title":"قرار و دیت","description":"ایده‌ای برای با هم بودن","icon":"◌","color":"#ff8fa3","file":"data/date.json"},
+    {"id":"out","title":"بریم بیرون؟","description":"یک مسیر تازه کشف کن","icon":"↗","color":"#72d8d2","file":"data/out.json"},
+    {"id":"with","title":"با کی برم؟","description":"همراه مناسب امروز","icon":"∞","color":"#8d7dff","file":"data/with.json"},
+    {"id":"should","title":"انجامش بدم؟","description":"بین بله و نه معلق نمان","icon":"✓","color":"#d8f36b","file":"data/should.json"},
+    {"id":"game","title":"یک بازی کوتاه","description":"برای جمع یا تنهایی","icon":"◇","color":"#c8bfff","file":"data/game.json"},
+    {"id":"dice","title":"تاس تصمیم","description":"عدد شانس تو چیست؟","icon":"⚄","color":"#ffce73","file":"data/dice.json"},
+    {"id":"ideas","title":"ایده می‌خوام","description":"جرقه‌ای برای شروع","icon":"✧","color":"#9fe3ff","file":"data/ideas.json"}
+  ],
+  "sounds": [
+    {"id":"rain","title":"باران نرم","subtitle":"rain","color":"#72d8d2","frequency":180,"wave":"sine"},
+    {"id":"cafe","title":"کافه","subtitle":"cafe","color":"#ffab73","frequency":260,"wave":"triangle"},
+    {"id":"space","title":"فضای دور","subtitle":"space","color":"#8d7dff","frequency":110,"wave":"sine"},
+    {"id":"forest","title":"جنگل","subtitle":"forest","color":"#d8f36b","frequency":330,"wave":"triangle"}
+  ]
+}
